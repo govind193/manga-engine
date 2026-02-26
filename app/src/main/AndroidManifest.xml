@@ -1,23 +1,17 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.govind.mangaengine">
-
-    <uses-permission android:name="android.permission.INTERNET"/>
+    package="com.govind.manga">
 
     <application
-        android:allowBackup="true"
-        android:label="Manga Engine"
-        android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen">
+        android:label="AI Manhwa Generator"
+        android:theme="@android:style/Theme.Light.NoTitleBar">
 
-        <activity android:name=".MainActivity"
-            android:exported="true"
-            android:configChanges="orientation|screenSize|keyboardHidden">
-
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
-
         </activity>
+
     </application>
 
 </manifest>
