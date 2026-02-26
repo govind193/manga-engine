@@ -3,15 +3,25 @@ plugins {
 }
 
 android {
-    namespace 'com.govind.mangaengine'
+    namespace 'com.ai.manga'
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.govind.mangaengine"
+        applicationId "com.ai.manga"
         minSdk 24
         targetSdk 34
         versionCode 1
         versionName "1.0"
+    }
+
+    buildFeatures {
+        buildConfig true
+    }
+
+    packagingOptions {
+        resources {
+            excludes += ['META-INF/DEPENDENCIES', 'META-INF/LICENSE', 'META-INF/LICENSE.txt', 'META-INF/NOTICE', 'META-INF/NOTICE.txt']
+        }
     }
 
     buildTypes {
